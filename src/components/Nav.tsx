@@ -31,7 +31,7 @@ const Nav: React.FC = () => {
         </button>
 
         {/* Social Icons (Always Visible) */}
-        <div className="flex items-center space-x-6 drop-shadow-[0_0_4px_rgba(0,0,0,1.0)]">
+        <div className="flex items-center space-x-6 drop-shadow-[0_0_4px_rgba(0,0,0,1.0)] social-icons-container">
           <a href="https://www.linkedin.com/in/jude-lwin/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
             <i className="fab fa-linkedin text-white text-2xl"></i>
           </a>

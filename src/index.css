@@ -77,3 +77,9 @@ transform-origin: center center; /* Ensure rotation happens around the center */
     transform-origin: center center; /* Ensure rotation happens around the center */
     }
 }
+
+@media (min-width: 1024px) {
+  .social-icons-container {
+    margin-right: 20px; /* Adjust this value to your preference */
+  }
+}
