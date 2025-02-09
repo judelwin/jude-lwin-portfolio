@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
             alt={project.title}
             className="w-full h-full object-cover mb-3 rounded text-black"
           />
-          <h3 className="text-2xl font-semibold text-black w-full text-center">{project.title}</h3>
+          <h3 className="text-xl font-semibold text-black w-full text-center">{project.title}</h3>
         </div>
       </div>
       <div className="back">

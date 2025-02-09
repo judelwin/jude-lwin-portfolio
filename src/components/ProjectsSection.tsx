@@ -108,8 +108,8 @@ const ProjectsSection: React.FC = () => {
     project={selectedProject}
   />
   <div className="text-center mt-8 mb-1 text-xs text-white opacity-70">
-    <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icons">
-      Ramen icons created by Freepik - Flaticon
+    <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icon">
+      Ramen icon created by Freepik - Flaticon
     </a>
   </div>
 </div>
