@@ -7,7 +7,9 @@ const AboutMeSection: React.FC = () => {
     <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#D1C1F2] to-[#BCA4E3] text-black px-4">
       <h2 className="text-4xl font-bold mb-4 ">About Me</h2>
       <p className="text-center max-w-2xl">
-      Hi, I’m Jude Lwin—a Computer Science and Mathematics student passionate about software engineering, statistics, and finance. I love building full-stack applications, exploring data-driven systems, and solving complex problems at the intersection of these fields. Outside of tech, I enjoy playing video games, going to the gym, and trying new foods.
+      Hi, I’m Jude Lwin, a Computer Science and Mathematics student at the University of Maryland. Right now, I’m especially interested in the applications of mathematics and statistics in machine learning!
+
+Aside from that, I love seeing my code come to life on the screen, so I have experience in full-stack web and app development. When I’m not doing computer science things, you’ll probably find me eating, sleeping, or playing video games with friends!
       </p>
 
       <motion.button

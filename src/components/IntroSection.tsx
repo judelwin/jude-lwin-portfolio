@@ -10,7 +10,7 @@ const IntroSection: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Welcome to Jude Lwin's Website
+        Hi, I'm Jude!
       </motion.h1>
       <motion.p
         className="text-xl mt-4 text-center"
@@ -18,7 +18,7 @@ const IntroSection: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        A space for me and my projects.
+        Learn more about me and my projects below.
       </motion.p>
 
       <motion.button
