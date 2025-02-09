@@ -9,12 +9,13 @@
 
   html, body {
     overflow-x: hidden;
-    width: 100%;
-    min-height: 100vh
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #DFC5FE, #8A2BE2);
   }
   body {
     overflow-y: scroll; /* Allows vertical scrolling within the body */
-    background: linear-gradient(to bottom, #DFC5FE, #8A2BE2);
+    
   }
   html {
     scroll-behavior: smooth;
