@@ -10,6 +10,7 @@
 html {
   
   overflow-x: hidden; /* Prevent horizontal overflow */
+  background: linear-gradient(to bottom, #DFC5FE, #8A2BE2);
 }
 
 html, body {
@@ -18,8 +19,9 @@ html, body {
 }
 
 body {
+  overflow-y: scroll; /* Allows vertical scrolling within the body */
   scroll-behavior: smooth;
-  background: linear-gradient(to bottom, #DFC5FE, #8A2BE2);
+  
 }
 
   
