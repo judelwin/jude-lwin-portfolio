@@ -20,8 +20,8 @@ html {
 display: flex;
 justify-content: center; /* Centers the carousel items horizontally */
 align-items: center;    /* Centers the carousel items vertically */
-width: 33%; /* Adjust width for the carousel */
-height: 50%;
+width: 20vw; /* Adjust width for the carousel */
+height: 20vh;
 transform-style: preserve-3d;
 position: relative;
 margin: auto; /* Ensures proper centering */
@@ -43,3 +43,31 @@ transition: transform 0.5s ease-in-out;
 transform-origin: center center; /* Ensure rotation happens around the center */
 }
 
+@media (max-width: 640px) {
+  .carousel-container {
+    display: flex;
+    justify-content: center; /* Centers the carousel items horizontally */
+    align-items: center;    /* Centers the carousel items vertically */
+    width: 40vw; /* Adjust width for the carousel */
+    height: 20vh;
+    transform-style: preserve-3d;
+    position: relative;
+    margin: auto; /* Ensures proper centering */
+    }
+    
+    
+    .carousel-item {
+    display: flex;
+    justify-content: center; /* Centers the carousel items horizontally */
+    align-items: stretch;
+    position: absolute;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    background: white ; /*#DFC5FE   8A2BE2*/
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center center; /* Ensure rotation happens around the center */
+    }
+}

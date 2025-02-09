@@ -84,14 +84,14 @@ const ProjectsSection: React.FC = () => {
           
         ))}
         <div
-          className="absolute left-[-35%] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
+          className="absolute left-[-10vh] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
           onClick={handlePrev}
         >
           <ChevronLeftIcon className="h-10 w-10 text-black" />
         </div>
 
         <div
-          className="absolute right-[-35%] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
+          className="absolute right-[-10vh] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
           onClick={handleNext}
         >
           <ChevronRightIcon className="h-10 w-10 text-black" />
