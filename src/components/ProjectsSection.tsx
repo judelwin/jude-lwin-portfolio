@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import Modal from './Modal';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'; // Import icons
+import { ChevronLeftIcon, ChevronRightIcon, ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'; // Import icons
 
 const projectData = [
   {
@@ -29,6 +29,7 @@ const projectData = [
     githubLink: '',  // If no GitHub link
     hostedLink: '',  // If no hosted link
   },
+  
 ];
 
 
@@ -84,14 +85,14 @@ const ProjectsSection: React.FC = () => {
           
         ))}
         <div
-          className="absolute left-[-10vh] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
+          className="absolute left-[-70px] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
           onClick={handlePrev}
         >
           <ChevronLeftIcon className="h-10 w-10 text-black" />
         </div>
 
         <div
-          className="absolute right-[-10vh] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
+          className="absolute right-[-70px] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
           onClick={handleNext}
         >
           <ChevronRightIcon className="h-10 w-10 text-black" />
