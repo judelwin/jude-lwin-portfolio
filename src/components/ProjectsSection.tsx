@@ -71,7 +71,7 @@ const ProjectsSection: React.FC = () => {
     <div className="font-semibold text-white h-screen flex flex-col items-center justify-center bg-gradient-to-b from-lavender to-violet">
   <div className="relative w-full h-full flex flex-col items-center justify-center">
     <div className="relative w-1/2 h-1/2 flex flex-col items-center justify-center">
-      <h2 className="text-5xl font-bold mb-6">Projects</h2>
+      <h2 className="text-4xl font-bold">Projects</h2>
       <div className="relative carousel-container w-full " style={{ perspective: '1000px' }}>
         {projectData.map((project, index) => (
           <div
