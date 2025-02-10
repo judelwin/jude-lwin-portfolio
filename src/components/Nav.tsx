@@ -48,9 +48,9 @@ const Nav: React.FC = () => {
       {isOpen && (
   <div className="absolute left-0 mt-2">
     <ul className="md:hidden flex flex-col items-start w-full bg-violet-800 pt-4 pb-2 shadow-lg rounded-b-lg">
-      <li><a href="#intro" className="text-white font-bold text-lg hover:text-violet-400 py-2 px-4">Home</a></li>
-      <li><a href="#about" className="text-white font-bold text-lg hover:text-violet-400 py-2 px-4">About Me</a></li>
-      <li><a href="#projects" className="text-white font-bold text-lg hover:text-violet-400 py-2 px-4">Projects</a></li>
+      <li><a onClick={() => setIsOpen(false)} href="#intro" className="text-white font-bold text-lg hover:text-violet-400 py-2 px-4">Home</a></li>
+      <li><a onClick={() => setIsOpen(false)} href="#about" className="text-white font-bold text-lg hover:text-violet-400 py-2 px-4">About Me</a></li>
+      <li><a onClick={() => setIsOpen(false)}href="#projects" className="text-white font-bold text-lg hover:text-violet-400 py-2 px-4">Projects</a></li>
     </ul>
   </div>
 )}
