@@ -102,11 +102,11 @@ const ProjectsSection: React.FC = () => {
     closeModal={() => setModalOpen(false)}
     project={selectedProject}
   />
-  <div className="text-center  mb-1 text-xs text-white opacity-70">
-    <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icon">
-      Ramen icon created by Freepik - Flaticon
-    </a>
-  </div>
+  <div className="bottom-2 text-center text-xs text-white opacity-70">
+        <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icon">
+          Ramen icon created by Freepik - Flaticon
+        </a>
+      </div>
 </div>
 
   );

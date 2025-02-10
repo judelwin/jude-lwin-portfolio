@@ -4,6 +4,7 @@ import IntroSection from './components/IntroSection';
 import AboutMeSection from './components/AboutMeSection';
 import ProjectsSection from './components/ProjectsSection';
 import Nav from './components/Nav';
+import SkillsSection from './components/SkillsSection';
 
 const App: React.FC = () => {
   return (
@@ -11,19 +12,21 @@ const App: React.FC = () => {
     <div className="bg-black text-white min-h-screen">
       <Nav />
       <div id="intro">
-        
-      </div>
       <IntroSection />
+      </div>
+      
       <div id="about">
-      
-      </div>
       <AboutMeSection />
-      <div id="intro">
-      
       </div>
+      
+      {/* <div id="skills">
+      <SkillsSection />
+      </div> */}
+      
       <div id="projects">
       <ProjectsSection />
       </div>
+      
       
     </div>
   );

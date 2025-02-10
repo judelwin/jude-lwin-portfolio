@@ -20,7 +20,11 @@
     scroll-behavior: smooth;
   }
 
-
+  .icon-size {
+    height: 2rem; /* Adjust the size as needed */
+    width: 2rem;  /* Adjust the size as needed */
+  }
+  
 .carousel-container {
 display: flex;
 justify-content: center; /* Centers the carousel items horizontally */

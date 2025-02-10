@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FaJava, FaPython, FaJs, FaCogs, FaReact, FaDatabase } from 'react-icons/fa'; // Example icons
 import { SiTypescript, SiFirebase, SiGit, SiLinux, SiRust, SiR } from 'react-icons/si'; // More icons
 
@@ -18,15 +17,9 @@ const skills = [
   { name: 'Linux', icon: <SiLinux className="icon-size text-black" /> },
 ];
 
-const AboutMeSection: React.FC = () => {
+const SkillsSection: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#D1C1F2] to-[#BCA4E3] text-black p-12 ">
-      <h2 className="text-4xl font-bold mb-4 ">About Me</h2>
-      <p className="text-center max-w-2xl pb-16">
-      Hi, I’m Jude Lwin, a Computer Science and Mathematics student at the University of Maryland. Right now, I’m especially interested in the applications of mathematics and statistics in machine learning!
-
-Aside from that, I love seeing my code come to life on the screen, so I have experience in full-stack web and app development. When I’m not doing computer science things, you’ll probably find me eating, sleeping, or playing video games with friends!
-      </p>
+    <div className="font-semibold text-white bg-gradient-to-b from-[#BCA4E3] to-[#D1C1F2] py-16 relative">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Skills & Technologies</h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-center">
@@ -41,23 +34,13 @@ Aside from that, I love seeing my code come to life on the screen, so I have exp
         </div>
       </div>
       {/* Ramen credit at the bottom */}
-      
-      <motion.button
-        className="mt-8 px-6 py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:bg-violet hover:text-white"
-        whileHover={{ scale: 1.1 }}
-        onClick={() => {
-          const projectsSection = document.getElementById("projects");
-          if (projectsSection) {
-            projectsSection.scrollIntoView({ behavior: 'smooth' });
-          }
-        }}
-      >
-      Scroll Down
-    </motion.button>
-
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-center text-xs text-white opacity-70">
+        <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icon">
+          Ramen icon created by Freepik - Flaticon
+        </a>
+      </div>
     </div>
-
   );
 };
 
-export default AboutMeSection;
+export default SkillsSection;
