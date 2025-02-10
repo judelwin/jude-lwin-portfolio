@@ -26,7 +26,7 @@ const SkillsSection: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#C7B3EB] to-[#BCA4E3] text-black p-12 pt-[15vh] pb-[15vh]">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Skills & Technologies</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-center">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-center icon-grid ">
           {skills.map((skill, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="p-4 bg-white rounded-full shadow-lg">

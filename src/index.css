@@ -81,4 +81,11 @@ transform-origin: center center; /* Ensure rotation happens around the center */
     transition: transform 0.5s ease-in-out;
     transform-origin: center center; /* Ensure rotation happens around the center */
     }
+    .icon-size {
+      height: 1.5rem; /* Adjust the size as needed */
+      width: 1.5rem;  /* Adjust the size as needed */
+    }
+    .icon-grid {
+      gap: 0.5rem;
+    }
 }
