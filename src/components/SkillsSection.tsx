@@ -38,7 +38,7 @@ const SkillsSection: React.FC = () => {
         </div>
       </div>
       <motion.button
-              className="mt-8 px-6 py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:bg-violet hover:text-white"
+              className="mt-4 px-6 py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:bg-violet hover:text-white"
               whileHover={{ scale: 1.1 }}
               onClick={() => {
                 const projectsSection = document.getElementById("projects");
