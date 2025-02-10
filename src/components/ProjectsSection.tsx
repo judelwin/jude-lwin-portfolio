@@ -57,7 +57,7 @@ const ProjectsSection: React.FC = () => {
     if (distance < 0) distance += totalItems;
     let angle = (360 / totalItems) * distance;
     if (angle > 180) angle -= 360;
-    const translateZ = 250;
+    const translateZ = 125; //250
     const rotationDirection = distance === 0 ? 0 : distance > 0 ? 1 : -1;
     const rotationAngle = angle * rotationDirection;
     return {
@@ -85,14 +85,14 @@ const ProjectsSection: React.FC = () => {
           
         ))}
         <div
-          className="absolute left-[-70px] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
+          className="absolute left-[-45px] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
           onClick={handlePrev}
         >
           <ChevronLeftIcon className="h-10 w-10 text-black" />
         </div>
 
         <div
-          className="absolute right-[-70px] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
+          className="absolute right-[-45px] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
           onClick={handleNext}
         >
           <ChevronRightIcon className="h-10 w-10 text-black" />
