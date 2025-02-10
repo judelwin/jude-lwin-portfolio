@@ -19,10 +19,10 @@ const App: React.FC = () => {
       <AboutMeSection />
       </div>
       
-      {/* <div id="skills">
+      <div id="skills">
       <SkillsSection />
-      </div> */}
-      
+      </div>
+
       <div id="projects">
       <ProjectsSection />
       </div>

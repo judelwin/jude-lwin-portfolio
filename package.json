@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.4.20",
     "cra-template-typescript": "1.2.0",
     "framer-motion": "^11.18.1",
