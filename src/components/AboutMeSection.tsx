@@ -20,7 +20,7 @@ const skills = [
 
 const AboutMeSection: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#D1C1F2] to-[#BCA4E3] text-black p-12 ">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#D1C1F2] to-[#BCA4E3] text-black p-12 pt-20">
       <h2 className="text-4xl font-bold mb-4 ">About Me</h2>
       <p className="text-center max-w-2xl pb-16">
       Hi, I’m Jude Lwin, a Computer Science and Mathematics student at the University of Maryland. Right now, I’m especially interested in the applications of mathematics and statistics in machine learning!
