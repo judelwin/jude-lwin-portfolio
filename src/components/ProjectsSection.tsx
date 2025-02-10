@@ -70,8 +70,8 @@ const ProjectsSection: React.FC = () => {
   return (
     <div className="font-semibold text-white h-screen flex flex-col items-center justify-center bg-gradient-to-b from-lavender to-violet">
   <div className="relative w-full h-full flex flex-col items-center justify-center">
-    <div className="relative w-1/2 h-1/2 flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-bold">Projects</h2>
+    <div className="relative w-1/2 h-1/2 flex flex-col items-center justify-center min-h-[300px]">
+      <h2 className="text-4xl font-bold ">Projects</h2>
       <div className="relative carousel-container w-full " style={{ perspective: '1000px' }}>
         {projectData.map((project, index) => (
           <div
@@ -84,22 +84,17 @@ const ProjectsSection: React.FC = () => {
           </div>
           
         ))}
-        <div
-          className="absolute left-[-45px] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
-          onClick={handlePrev}
-        >
-          <ChevronLeftIcon className="h-10 w-10 text-black" />
-        </div>
-
-        <div
-          className="absolute right-[-45px] top-1/2 transform -translate-y-1/2 cursor-pointer z-50"
-          onClick={handleNext}
-        >
-          <ChevronRightIcon className="h-10 w-10 text-black" />
-        </div>
-        {/* Arrows positioned outside */}
+        
         
       </div>
+      <div className="flex justify-center w-full">
+            <div className="cursor-pointer" onClick={handlePrev}>
+              <ChevronLeftIcon className="h-10 w-10 text-white" />
+            </div>
+            <div className="cursor-pointer" onClick={handleNext}>
+              <ChevronRightIcon className="h-10 w-10 text-white" />
+            </div>
+          </div>
     </div>
   </div>
   <Modal

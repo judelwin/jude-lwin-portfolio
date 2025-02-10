@@ -27,6 +27,7 @@ justify-content: center; /* Centers the carousel items horizontally */
 align-items: center;    /* Centers the carousel items vertically */
 width: 215px; /* Adjust width for the carousel */
 height: 20vh;
+min-height: 150px;
 max-width: 215px;
 transform-style: preserve-3d;
 position: relative;
