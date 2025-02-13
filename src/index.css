@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -7,85 +7,123 @@
 @tailwind components;
 @tailwind utilities;
 
-  html, body {
-    overflow-x: hidden;
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-  body {
-    overflow-y: scroll; /* Allows vertical scrolling within the body */
-    
-  }
-  html {
-    scroll-behavior: smooth;
-  }
+html,
+body {
+  overflow-x: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
+}
 
-  .icon-size {
-    height: 2rem; /* Adjust the size as needed */
-    width: 2rem;  /* Adjust the size as needed */
-  }
-  
+body {
+  overflow-y: scroll;
+  /* Allows vertical scrolling within the body */
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icon-size {
+  height: 2rem;
+  /* Adjust the size as needed */
+  width: 2rem;
+  /* Adjust the size as needed */
+}
+
 .carousel-container {
-display: flex;
-justify-content: center; /* Centers the carousel items horizontally */
-align-items: center;    /* Centers the carousel items vertically */
-width: 215px; /* Adjust width for the carousel */
-height: 20vh;
-min-height: 150px;
-max-width: 215px;
-transform-style: preserve-3d;
-position: relative;
-margin: auto; /* Ensures proper centering */
+  display: flex;
+  justify-content: center;
+  /* Centers the carousel items horizontally */
+  align-items: center;
+  /* Centers the carousel items vertically */
+  width: 215px;
+  /* Adjust width for the carousel */
+  height: 20vh;
+  min-height: 150px;
+  max-width: 215px;
+  transform-style: preserve-3d;
+  position: relative;
+  margin: auto;
+  /* Ensures proper centering */
 }
 
 
 .carousel-item {
-display: flex;
-justify-content: center; /* Centers the carousel items horizontally */
-align-items: stretch;
-position: absolute;
-width: 100%;
-max-width: 175px;
-height: 100%;
-background: white ; /*#DFC5FE   8A2BE2*/
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-transition: transform 0.5s ease-in-out;
-transform-origin: center center; /* Ensure rotation happens around the center */
+  display: flex;
+  justify-content: center;
+  /* Centers the carousel items horizontally */
+  align-items: stretch;
+  position: absolute;
+  width: 100%;
+  max-width: 175px;
+  height: 100%;
+  background: white;
+  /*#DFC5FE   8A2BE2*/
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center center;
+  /* Ensure rotation happens around the center */
 }
 
 @media (max-width: 640px) {
   .carousel-container {
     display: flex;
-    justify-content: center; /* Centers the carousel items horizontally */
-    align-items: center;    /* Centers the carousel items vertically */
-    width: 40vw; /* Adjust width for the carousel */
+    justify-content: center;
+    /* Centers the carousel items horizontally */
+    align-items: center;
+    /* Centers the carousel items vertically */
+    width: 40vw;
+    /* Adjust width for the carousel */
     height: 20vh;
     transform-style: preserve-3d;
     position: relative;
-    margin: auto; /* Ensures proper centering */
-    }
-    
-    
-    .carousel-item {
+    margin: auto;
+    /* Ensures proper centering */
+  }
+
+
+  .carousel-item {
     display: flex;
-    justify-content: center; /* Centers the carousel items horizontally */
+    justify-content: center;
+    /* Centers the carousel items horizontally */
     align-items: stretch;
     position: absolute;
     width: 100%;
     max-width: 200px;
     height: 100%;
-    background: white ; /*#DFC5FE   8A2BE2*/
+    background: white;
+    /*#DFC5FE   8A2BE2*/
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.5s ease-in-out;
-    transform-origin: center center; /* Ensure rotation happens around the center */
-    }
-    .icon-size {
-      height: 1.5rem; /* Adjust the size as needed */
-      width: 1.5rem;  /* Adjust the size as needed */
-    }
-    .icon-grid {
-      gap: 0px;
-    }
+    transform-origin: center center;
+    /* Ensure rotation happens around the center */
+  }
+
+  .icon-size {
+    height: 1.5rem;
+    /* Adjust the size as needed */
+    width: 1.5rem;
+    /* Adjust the size as needed */
+  }
+
+  .icon-grid {
+    gap: 0px;
+  }
+
+  .ramen {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Offset to ensure it's perfectly centered */
+    font-size: 9px;
+    /* Smaller font size on mobile */
+    text-align: center;
+    /* Center text */
+    width: 100%;
+  }
 }

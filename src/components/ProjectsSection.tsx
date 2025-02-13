@@ -29,7 +29,7 @@ const projectData = [
     githubLink: '',  // If no GitHub link
     hostedLink: '',  // If no hosted link
   },
-  
+
 ];
 
 
@@ -68,26 +68,26 @@ const ProjectsSection: React.FC = () => {
   };
 
   return (
-    <div className="font-semibold text-white h-screen flex flex-col items-center justify-center bg-gradient-to-b from-lavender to-violet">
-  <div className="relative w-full h-full flex flex-col items-center justify-center">
-    <div className="relative w-1/2 h-1/2 flex flex-col items-center justify-center min-h-[300px]">
-      <h2 className="text-4xl font-bold ">Projects</h2>
-      <div className="relative carousel-container w-full " style={{ perspective: '1000px' }}>
-        {projectData.map((project, index) => (
-          <div
-            key={index}
-            className="carousel-item z-10"
-            style={getTransformStyle(index)}
-            onClick={() => handleCardClick(project)}
-          >
-            <ProjectCard project={project} />
+    <div className="relative font-semibold text-white h-screen flex flex-col items-center justify-center bg-gradient-to-b from-lavender to-violet">
+      <div className="relative w-full h-full flex flex-col items-center justify-center">
+        <div className="relative w-1/2 h-1/2 flex flex-col items-center justify-center min-h-[300px]">
+          <h2 className="text-4xl font-bold ">Projects</h2>
+          <div className="relative carousel-container w-full " style={{ perspective: '1000px' }}>
+            {projectData.map((project, index) => (
+              <div
+                key={index}
+                className="carousel-item z-10"
+                style={getTransformStyle(index)}
+                onClick={() => handleCardClick(project)}
+              >
+                <ProjectCard project={project} />
+              </div>
+
+            ))}
+
+
           </div>
-          
-        ))}
-        
-        
-      </div>
-      <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full">
             <div className="cursor-pointer" onClick={handlePrev}>
               <ChevronLeftIcon className="h-10 w-10 text-white" />
             </div>
@@ -95,19 +95,18 @@ const ProjectsSection: React.FC = () => {
               <ChevronRightIcon className="h-10 w-10 text-white" />
             </div>
           </div>
-    </div>
-  </div>
-  <Modal
-    isOpen={modalOpen}
-    closeModal={() => setModalOpen(false)}
-    project={selectedProject}
-  />
-  <div className="bottom-2 text-center text-xs text-white opacity-70">
-        <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icon">
-          Ramen icon created by Freepik - Flaticon
-        </a>
+        </div>
       </div>
-</div>
+      <Modal
+        isOpen={modalOpen}
+        closeModal={() => setModalOpen(false)}
+        project={selectedProject}
+      />
+      <div className="absolute bottom-0  text-xs text-white opacity-70 ramen">        <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icon">
+        Ramen icon created by Freepik - Flaticon
+      </a>
+      </div>
+    </div>
 
   );
 };
