@@ -16,7 +16,7 @@
     }
   },
   "include": [
-    "src/**/*", "src/index.d.ts"                          // Include all files in the src folder
+    "src/**/*", "src/image.d.ts"                          // Include all files in the src folder
   ],
   "exclude": [
     "node_modules"                      // Exclude node_modules
