@@ -1,20 +1,21 @@
 {
   "short_name": "Jude Lwin",
   "name": "Jude Lwin Portfolio",
+  "description": "Learn more about Jude Lwin, a Computer Science and Mathematics student at the University of Maryland.",
   "icons": [
     {
-      "src": "ramen.png",
+      "src": "ramen-48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "ramen-48.png",
+      "src": "ramen.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "browser",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
