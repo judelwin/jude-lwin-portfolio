@@ -28,7 +28,7 @@ The site is deployed using **Vercel**. Any updates pushed to the main GitHub bra
    ```
 3. Start the development server:
    ```sh
-   npm run dev
+   npm start
    ```
 
 ## Contributing
