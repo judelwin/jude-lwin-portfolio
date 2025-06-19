@@ -78,7 +78,7 @@ const ProjectsSection: React.FC = () => {
 		if (distance < 0) distance += totalItems;
 		let angle = (360 / totalItems) * distance;
 		if (angle > 180) angle -= 360;
-		const translateZ = 125;
+		const translateZ = 135;
 		const rotationDirection = distance === 0 ? 0 : distance > 0 ? 1 : -1;
 		const rotationAngle = angle * rotationDirection;
 		return {
