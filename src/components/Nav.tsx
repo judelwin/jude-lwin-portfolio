@@ -38,7 +38,7 @@ const Nav: React.FC = () => {
           <a href="https://github.com/judelwin" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
             <i className="fab fa-github text-white text-2xl"></i>
           </a>
-          <a href="/Jude_Lwin_Resume.pdf" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
+          <a href="/jude_lwin_resume.pdf" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
             <i className="fas fa-file-alt text-white text-2xl"></i>
           </a>
         </div>
