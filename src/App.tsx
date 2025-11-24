@@ -1,33 +1,20 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import IntroSection from './components/IntroSection';
-import AboutMeSection from './components/AboutMeSection';
-import ProjectsSection from './components/ProjectsSection';
-import Nav from './components/Nav';
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import AboutSection from './components/AboutSection';
+import ExperienceSection from './components/ExperienceSection';
 import SkillsSection from './components/SkillsSection';
+import ProjectsSection from './components/ProjectsSection';
 
 const App: React.FC = () => {
   return (
-    
     <div className="bg-black text-white min-h-screen">
-      <Nav />
-      <div id="intro">
-      <IntroSection />
-      </div>
-      
-      <div id="about">
-      <AboutMeSection />
-      </div>
-      
-      <div id="skills">
+      <Navigation />
+      <Hero />
       <SkillsSection />
-      </div>
-
-      <div id="projects">
       <ProjectsSection />
-      </div>
-      
-      
+      <ExperienceSection />
+      <AboutSection />
     </div>
   );
 };

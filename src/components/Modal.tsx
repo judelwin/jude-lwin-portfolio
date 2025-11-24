@@ -1,4 +1,3 @@
-// Modal.tsx
 import React from 'react';
 
 interface ModalProps {
@@ -9,8 +8,8 @@ interface ModalProps {
     description: string;
     moreDetails: string;
     imageUrl: string;
-    githubLink?: string;  // Optional property for GitHub link
-    hostedLink?: string;  // Optional property for hosted link
+    githubLink?: string;
+    hostedLink?: string;
   };
 }
 
@@ -35,7 +34,6 @@ const Modal: React.FC<ModalProps> = ({ isOpen, closeModal, project }) => {
         <p className="mb-2">{project.description}</p>
         <p>{project.moreDetails}</p>
   
-        {/* Conditionally render GitHub and hosted links */}
         {project.githubLink && (
           <div className="mt-4">
             <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">

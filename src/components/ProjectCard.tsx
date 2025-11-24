@@ -17,7 +17,6 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         </div>
       </div>
       <div className="back">
-        {/* Static back color */}
       </div>
     </div>
   );

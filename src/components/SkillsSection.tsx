@@ -1,61 +1,70 @@
 import React from 'react';
-import { FaJava, FaPython, FaJs, FaCogs, FaReact, FaDatabase } from 'react-icons/fa'; // Example icons
-import { SiTypescript, SiFirebase, SiGit, SiLinux, SiRust, SiR } from 'react-icons/si'; // More icons
-import CIcon from '../assets/c-icon.png';  // C icon as PNG
-import OcamlIcon from '../assets/ocaml-icon.png'; // OCaml icon as PNG
 import { motion } from 'framer-motion';
-
-const skills = [
-  { name: 'Python', icon: <FaPython className="icon-size text-yellow-500" /> },
-  { name: 'Java', icon: <FaJava className="icon-size text-orange-500" /> },
-  { name: 'JavaScript', icon: <FaJs className="icon-size text-yellow-300" /> },
-  { name: 'OCaml', icon: <img src={OcamlIcon} alt="OCaml" className="icon-size" /> },  // Use img tag for OCaml icon
-  { name: 'C', icon: <img src={CIcon} alt="C" className="icon-size" /> }, // Use img tag for C icon
-  { name: 'React', icon: <FaReact className="icon-size text-cyan-500" /> },
-  { name: 'TypeScript', icon: <SiTypescript className="icon-size text-blue-600" /> },
-  { name: 'SQL', icon: <FaDatabase className="icon-size text-green-600" /> },
-  { name: 'Rust', icon: <SiRust className="icon-size text-orange-600" /> },
-  { name: 'R', icon: <SiR className="icon-size text-blue-700" /> },
-  { name: 'Git', icon: <SiGit className="icon-size text-gray-600" /> },
-  { name: 'Linux', icon: <SiLinux className="icon-size text-black" /> },
-];
-
+import { skills, skillCategories } from '../data/skills';
 
 const SkillsSection: React.FC = () => {
+  const skillsByCategory = {
+    language: skills.filter((s) => s.category === 'language'),
+    framework: skills.filter((s) => s.category === 'framework'),
+    tool: skills.filter((s) => s.category === 'tool'),
+    other: skills.filter((s) => s.category === 'other'),
+  };
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#C7B3EB] to-[#BCA4E3] text-black p-12">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8">Skills & Technologies</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-center icon-grid ">
-          {skills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="p-4 bg-white rounded-full shadow-lg">
-                {skill.icon}
-              </div>
-              <span className="mt-2 text-lg">{skill.name}</span>
-            </div>
-          ))}
+    <section id="skills" className="min-h-screen py-24 px-6 bg-black text-white">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.6 }}
+          className="mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-lavender-200 bg-clip-text text-transparent">
+            Skills & Technologies
+          </h2>
+          <p className="text-gray-400 text-lg">Tools and technologies I work with</p>
+        </motion.div>
+
+        <div className="space-y-12">
+          {Object.entries(skillsByCategory).map(([category, categorySkills]) => {
+            if (categorySkills.length === 0) return null;
+            return (
+              <motion.div
+                key={category}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-50px' }}
+                transition={{ duration: 0.6 }}
+              >
+                <h3 className="text-xl font-semibold mb-6 text-lavender-200">
+                  {skillCategories[category as keyof typeof skillCategories]}
+                </h3>
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
+                  {categorySkills.map((skill, index) => (
+                    <motion.div
+                      key={skill.name}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: index * 0.05 }}
+                      className="flex flex-col items-center group"
+                    >
+                      <div className="w-16 h-16 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg flex items-center justify-center mb-3 group-hover:border-violet-500/50 group-hover:bg-gray-800 transition-all duration-300">
+                        {skill.icon}
+                      </div>
+                      <span className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors text-center">
+                        {skill.name}
+                      </span>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
-      <motion.button
-              className="mt-4 px-6 py-3 bg-white text-black font-semibold rounded-lg shadow-lg hover:bg-violet hover:text-white"
-              whileHover={{ scale: 1.1 }}
-              onClick={() => {
-                const projectsSection = document.getElementById("projects");
-                if (projectsSection) {
-                  projectsSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              Scroll Down
-            </motion.button>
-      {/* Ramen credit at the bottom */}
-      {/* <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-center text-xs text-white opacity-70">
-        <a href="https://www.flaticon.com/free-icons/ramen" title="ramen icon">
-          Ramen icon created by Freepik - Flaticon
-        </a>
-      </div> */}
-    </div>
+    </section>
   );
 };
 
