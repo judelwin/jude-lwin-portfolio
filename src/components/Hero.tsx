@@ -55,12 +55,12 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <motion.button
-            onClick={() => scrollToSection('skills')}
+            onClick={() => scrollToSection('experience')}
             className="px-8 py-3 bg-gradient-to-r from-violet-500 to-violet-600 text-white rounded-lg font-medium hover:from-violet-600 hover:to-violet-700 transition-all duration-300 shadow-lg shadow-violet-500/50"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
-            My Skills
+            View Experience
           </motion.button>
           <motion.button
             onClick={() => scrollToSection('projects')}

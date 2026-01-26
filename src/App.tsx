@@ -12,9 +12,9 @@ const App: React.FC = () => {
     <div className="bg-black text-white min-h-screen">
       <Navigation />
       <Hero />
-      <SkillsSection />
-      <ProjectsSection />
       <ExperienceSection />
+      <ProjectsSection />
+      <SkillsSection />
       <AboutSection />
       <Analytics />
     </div>

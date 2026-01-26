@@ -11,6 +11,16 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    id: 'amazon-intern',
+    title: 'Incoming Software Engineer Intern — Amazon Stores',
+    company: 'Amazon',
+    location: 'New York, NY',
+    startDate: 'February 2026',
+    endDate: 'April 2026',
+    description: [],
+    technologies: [],
+  },
+  {
     id: 'capital-one-intern',
     title: 'Software Engineer Intern',
     company: 'Capital One',
@@ -26,15 +36,17 @@ export const experiences: Experience[] = [
   },
   {
     id: 'umd-ml-researcher',
-    title: 'Machine Learning Researcher',
+    title: 'Machine Learning Researcher | Advisor: Dr. Furong Huang',
     company: 'University of Maryland',
     location: 'College Park, MD',
     startDate: 'September 2025',
     endDate: 'Present',
     description: [
-      'Investigating reinforcement learning approaches for enabling LLMs to self-improve on math and coding tasks',
+      'Built end-to-end Python evaluation pipeline to study self-improvement in reasoning models on math problems',
+      'Implemented similarity search tooling over DeepMath-103K to inject question/answer pairs into model context',
+      'Automated evaluation workflows and job submission to shared HPC infrastructure for large-scale experiments',
     ],
-    technologies: ['Python', 'Machine Learning', 'Reinforcement Learning'],
+    technologies: ['Python', 'HPC', 'Machine Learning'],
   },
   {
     id: 'umd-ta',

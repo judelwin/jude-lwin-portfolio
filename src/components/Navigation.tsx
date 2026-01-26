@@ -17,9 +17,9 @@ const Navigation: React.FC = () => {
   }, []);
 
   const navItems = [
-    { id: 'skills', label: 'Skills' },
-    { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'skills', label: 'Skills' },
     { id: 'about', label: 'About' },
   ];
 
