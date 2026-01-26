@@ -94,7 +94,7 @@ const Navigation: React.FC = () => {
             )}
             {personalInfo.resume && (
               <motion.a
-                href={personalInfo.resume}
+                href={`${window.location.origin}${process.env.PUBLIC_URL || ''}${personalInfo.resume}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -177,7 +177,7 @@ const Navigation: React.FC = () => {
                 )}
                 {personalInfo.resume && (
                   <a
-                    href={personalInfo.resume}
+                    href={`${window.location.origin}${process.env.PUBLIC_URL || ''}${personalInfo.resume}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
